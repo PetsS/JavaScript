@@ -67,13 +67,13 @@ function displayCardsHidden() {
         img.setAttribute("data-id", element);
         memoryTable.appendChild(img);
     });
-
+    
     document.querySelectorAll("img").forEach(image => image.addEventListener("click", turnCards));
-
+    
 }
 
 function turnCards(event) {
-
+    
     if (isClicked) {
         let image = event.target;
         let dataId = image.dataset.id;
@@ -82,7 +82,7 @@ function turnCards(event) {
         image.setAttribute("src", picture);
 
         counter++;
-
+        
         if (counter == 1) {
             card1 = image;
         }
@@ -97,12 +97,9 @@ function turnCards(event) {
                 revealedCardsCounter = revealedCardsCounter + 2;
                 isGameWin();
             }
-            
-console.log(scoreCounter);
-            // displayScoreCount();
+            displayScoreCount();
         }
     }
-
 }
 
 function resetCards() {
@@ -125,30 +122,28 @@ function isGameWin() {
 
 function replayKeySpace(e) {
     if (e.key == " ") {
-        arrayMemory = [];
-        counter = 0;
-        card1 = 0;
-        card2 = 0;
-        revealedCardsCounter = 0;
-        isClicked = true;
-        scoreCounter = 0;
-        emptyTable();
-        getCards();
-        displayCardsHidden();
+        // arrayMemory = [];
+        // counter = 0;
+        // card1 = 0;
+        // card2 = 0;
+        // revealedCardsCounter = 0;
+        // isClicked = true;
+        // scoreCounter = 0;
+        // emptyTable();
+        window.location.reload();
     }
 }
 
 function replayButtonOK() {
-    arrayMemory = [];
-    counter = 0;
-    card1 = 0;
-    card2 = 0;
-    revealedCardsCounter = 0;
-    isClicked = true;
-    scoreCounter = 0;
-    emptyTable();
-    getCards();
-    displayCardsHidden();
+    // arrayMemory = [];
+    // counter = 0;
+    // card1 = 0;
+    // card2 = 0;
+    // revealedCardsCounter = 0;
+    // isClicked = true;
+    // scoreCounter = 0;
+    // emptyTable();
+    window.location.reload();
 }
 
 function emptyTable() {
@@ -159,11 +154,6 @@ function emptyTable() {
 }
 
 function displayScoreCount() {
-    let captionScore = document.createElement("caption");
-    let textNodeScore = document.createTextNode(scoreCounter);
-    
-    captionScore.appendChild(textNodeScore);
-    scoreTag.appendChild(captionScore);
-
+    scoreTag.innerHTML = scoreCounter;
     
 }
