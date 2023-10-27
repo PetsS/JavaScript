@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.navbar a {
+
+  /* padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  width: 20%; */
+  text-align: center;
+}
+
+
+/* .navbar a:hover {
+  background-color: #000;
+} */
+
+.navbar a.active {
+  background-color: #96bde9;
+}
+
+h1 {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.body-div {
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  /* border: 2px solid #96bde9; */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 1em;
+}
+
+#profil-image {
+  width: 25%;
+} 
+
+@media screen and (max-width: 600px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+#memoryTable {
+  /* max-width: 100%; */
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+}
+
+#memoryTable>img {
+  border: 3px solid rgb(50, 98, 185);
+  height: 8rem;
+  box-sizing: border-box;
+  object-fit: contain;
+}

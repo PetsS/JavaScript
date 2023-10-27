@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENI - Memory - Profil</title>
+
+    <!-- lien le CDN pour Bootstrap, font-awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- lien le CDN pour les fonts, font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar" style="background-color: #e3f2fd;">
+        <a class="btn btn-primary" role="button" href="index.html" target="_self"><i class="fa fa-fw fa-home"></i>
+            Accueil</a>
+        <a class="btn btn-primary" role="button" href="signUp.html" target="_self"><i class="fa fa-sign-in"></i>
+            S'inscrire</a>
+        <a class="btn btn-primary" role="button" href="login.html" target="_self"><i class="fa fa-fw fa-envelope"></i>
+            Se connecter</a>
+        <a class="btn btn-primary" data-bs-toggle="button" role="button" href="profil.html" target="_self"><i
+                class="fa fa-fw fa-user"></i> Profil</a>
+        <a class="btn btn-primary" role="button" href="play.html" target="_self"><i class="fa fa-fw fa-gamepad"></i>
+            Jouer</a>
+    </nav>
+
+    <h1>ENI - Memory - Profil</h1>
+
+    <div class="body-div">
+        <div class="card">
+            <div class="card-header">
+                Profil
+            </div>
+            <div class="card-body">
+                <img id="profil-image" src="ressources/question.svg" alt="profil image">
+                <form>
+                    <div id="username">Nom d'utilisateur</div>
+                    <div id="email">Email</div>
+                    <div class="mb-3">
+                        <select id="select-memory" class="form-select" aria-label="Default select example">
+                            <option selected>Choix du Memory</option>
+                        </select>
+                    </div>
+                    <div>
+                        <img id="image-memory" src="" alt="" />
+                    </div>
+                    <div class="mb-3">
+                        <select id="select-size" class="form-select" aria-label="Default select example">
+                            <option selected>Taille du Memory</option>
+                        </select>
+                    </div class="mb-3">
+                    <button class="btn btn-primary" id="submitButton" type="button">Enregistrez Option</button>
+                </form>
+
+                <!-- <h3>Derniers Scores :</h3> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="profil.js" type="module"></script>
+</body>
+
+</html>

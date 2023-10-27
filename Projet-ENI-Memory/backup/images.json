@@ -1,0 +1,16 @@
+{
+    "question" : "ressources/question.svg",
+
+    "legumes" : [
+        {"src" : "ressources/memory-legume/1.svg"},
+        {"src" : "ressources/memory-legume/2.svg"},
+        {"src" : "ressources/memory-legume/3.svg"},
+        {"src" : "ressources/memory-legume/4.svg"},
+        {"src" : "ressources/memory-legume/5.svg"},
+        {"src" : "ressources/memory-legume/6.svg"}
+    ],
+
+    "chiens" : [
+
+    ]
+}
