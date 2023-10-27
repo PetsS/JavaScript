@@ -13,19 +13,8 @@ body {
 }
 
 .navbar a {
-
-  /* padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  width: 20%; */
   text-align: center;
 }
-
-
-/* .navbar a:hover {
-  background-color: #000;
-} */
 
 .navbar a.active {
   background-color: #96bde9;

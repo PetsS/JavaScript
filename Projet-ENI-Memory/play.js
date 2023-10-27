@@ -5,6 +5,7 @@ window.onload = init;
 // const memorySize = 4;
 const memorySize = JSON.parse(localStorage.getItem("memory"))[0].size;
 const memoryChoice = JSON.parse(localStorage.getItem("memory"))[0].memory;
+let scoreTag = document.getElementById("score-counter");
 let arrayMemory = [];
 let counter = 0;
 let card1 = 0;
@@ -158,6 +159,11 @@ function emptyTable() {
 }
 
 function displayScoreCount() {
-    let captionTag = document.getElementById("score-counter");
-    captionTag.text(scoreCounter);
+    let captionScore = document.createElement("caption");
+    let textNodeScore = document.createTextNode(scoreCounter);
+    
+    captionScore.appendChild(textNodeScore);
+    scoreTag.appendChild(captionScore);
+
+    
 }
